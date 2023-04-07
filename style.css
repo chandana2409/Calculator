@@ -1,0 +1,58 @@
+body {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.number1 input {
+    width: 300px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+}
+
+.number2 input {
+    width: 300px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+}
+
+.ans input {
+    width: 300px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+}
+
+.operations input {
+    width: 75px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: larger;
+    border: 2px solid black;
+    border-radius: 5px;
+}

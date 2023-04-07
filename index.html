@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="number1">
+                <label for="txtnum1">Enter the First Number:</label><br>
+                <input type="number" id="txtnum1"><br>
+            </div>
+            <div class="number2">
+                <label for="txtnum2">Enter the Second Number:</label><br>
+                <input type="number" id="txtnum2"><br><br>
+            </div>
+            <div class="operations">
+                <input type="button" value="+" onclick="add()">
+                <input type="button" value="-" onclick="sub()">
+                <input type="button" value="×" onclick="mul()">
+                <input type="button" value="÷" onclick="div()"><br>
+            </div>
+            <div class="ans">
+                <label for="txtsum">Comment:</label><br>
+                <input type="number" id="txtsum"><br>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function add() {
+            var num1 = Number(document.getElementById("txtnum1").value);
+            var num2 = Number(document.getElementById("txtnum2").value);
+            var sum = num1 + num2;
+            document.getElementById("txtsum").value = String(sum);
+        }
+        function sub() {
+            var num1 = Number(document.getElementById("txtnum1").value);
+            var num2 = Number(document.getElementById("txtnum2").value);
+            var s = num1 - num2;
+            document.getElementById("txtsum").value = String(s);
+        }
+        function mul() {
+            var num1 = Number(document.getElementById("txtnum1").value);
+            var num2 = Number(document.getElementById("txtnum2").value);
+            var m = num1 * num2;
+            document.getElementById("txtsum").value = String(m);
+        }
+        function div() {
+            var num1 = Number(document.getElementById("txtnum1").value);
+            var num2 = Number(document.getElementById("txtnum2").value);
+            var D = num1 / num2;
+            document.getElementById("txtsum").value = String(D);
+        }
+    </script>
+</body>
+
+</html>
